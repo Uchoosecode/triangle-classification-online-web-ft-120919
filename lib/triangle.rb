@@ -7,10 +7,6 @@ class Triangle
    @side2 = side2
    @side3 = side3
    
-   if @side1 <= 0 || @side2 <= 0 || @side3 <= 0 
-        raise
-        TriangleError
-      end
  end
   
   def kind 
@@ -27,5 +23,8 @@ class Triangle
     class TriangleError < StandardError
     end
   
-  
+   if @side1 <= 0 || @side2 <= 0 || @side3 <= 0 
+        raise
+        TriangleError
+      end
 end
