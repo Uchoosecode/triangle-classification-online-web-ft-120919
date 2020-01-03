@@ -19,14 +19,13 @@ class Triangle
     else 
       :scalene
     end
-  end
-    class TriangleError < StandardError
-   
    
    if @side1 <= 0 || @side2 <= 0 || @side3 <= 0 
         raise
         TriangleError
       end
+  end
+    class TriangleError < StandardError
     end
   
 end
